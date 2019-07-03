@@ -1,0 +1,332 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+.png {
+  background-image: url(../images/bulb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: calc(100vh);
+}
+
+/* the portfolio tiltle */
+.header {
+  position: relative;
+  top: 40px;
+  left: 100px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #a64942;
+  opacity: 0.7;
+}
+
+.header:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.mobile{
+  display: none;
+}
+/* the nav bar */
+.nav ul li a {
+  text-decoration: none;
+  color: #e6f8f9;
+  font-size: 1rem;
+}
+
+.nav ul li a:hover{
+  opacity: 0.6;
+  border-bottom: 3px solid #a64942;
+  transition: 0.1s;
+}
+
+.nav ul li {
+  list-style: none;
+  float: left;
+  margin-left: 30px;
+  font-weight: 400;
+}
+
+.nav ul {
+  margin-left: 850px;
+}
+
+.active{
+  opacity: 0.6;
+  border-bottom: 3px solid #a64942;
+}
+
+/* text within the background */
+.maincaps {
+  margin-top: 17%;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.caps {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 20px;
+  color: #fff;
+  font-weight: 760;
+}
+
+.capstext {
+  font-size: 5rem;
+  color: #f4f4f4f4;
+  font-weight: 900;
+}
+
+.down{
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 110px;
+  opacity: 0.6;
+  cursor: pointer;
+  animation: bounce 2s ease-in infinite;
+}
+
+.far{
+  color:#a64942;
+  position: fixed;
+  right:5%;
+  bottom:5%;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* sections that have similar properties */
+#skillhead, #projecthead, #contacthead{
+  font-weight: 900;
+  font-size:5rem;
+  letter-spacing:5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#skillhead, #contacthead{
+  padding: 100px 60px 60px 60px;
+}
+
+/* skill section style */
+#skillhead{
+  color:#111;
+}
+
+.skilltext{
+  color:#111;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.progressbar, .progressbar1, .progressbar2, .progressbar3, .progressbar4  {
+  border-radius:8px;
+  height: 26.5px;
+  position:relative;
+  bottom: 15px;
+  left: 40%;
+  cursor: pointer;
+}
+
+.progressbar {
+  width:450px;
+  background-color: #bdf2d5;
+}
+
+.progressbar1 {
+  width:400px;
+  background-color: #d527b7;
+}
+
+.progressbar2 {
+  width:300px;
+  background-color: #5bd1d7;
+}
+
+.progressbar3 {
+  width:350px;
+  background-color: #d527b7;
+}
+
+.progressbar4 {
+  width:250px;
+  background-color: #5bd1d7;
+}
+
+/* the contact section design */
+#contact{
+  background-image: url(../images/bulb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh);
+}
+
+.button{
+  text-transform: uppercase;
+  margin-left: 46%;
+  margin-top: 4%;
+  background-color: #a64942;
+  width: 120px;
+  padding:10px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+#contact a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.button:hover {
+  background-color:#fff ;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#contact a:hover{
+  color:#a64942;
+  transition: 0.5s;
+}
+
+.footer{
+  margin-top: 5%;
+}
+/* the animatin section */
+
+@keyframes bounce {
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(2px);
+  }
+  40%{
+    transform: translateY(4px);
+  }
+  60%{
+    transform: translateY(6px);
+  }
+  80%{
+    transform: translateY(8px);
+  }
+  100%{
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 1024px) {
+  ul{
+    display: none;
+  }
+
+  .show{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: calc(100vh);
+    width: calc(100vw);
+  }
+
+  .show li{
+    text-align: left;
+    padding:3%;
+    font-size: 5rem;
+    font-weight: 900;
+  }
+
+  .maincaps {
+    margin-top: 30%;
+  }
+
+  .mobile{
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 6%;
+    left:85%;
+  }
+
+  .progressbar, .progressbar1, .progressbar2, .progressbar3, .progressbar4  {
+    left: 25%;
+  }
+
+  #contact{
+    height: calc(80vh);
+  }
+
+  .button{
+    margin-left: 43%;
+  }
+}
+
+@media (max-width: 568px) {
+
+  .png{
+    height: calc(194vh);
+    width: 165%;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .show{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -64%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: calc(194vh);
+    padding:0 80%;
+  }
+
+  .show li{
+    text-align: center;
+    padding:1%;
+    font-size: 5rem;
+    font-weight: 900;
+  }
+
+  .maincaps {
+    margin-top: 20%;
+  }
+  .header {
+    left:30px;
+  }
+
+  .mobile{
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 11%;
+    left:140%;
+  }
+
+  #contact{
+    width: 165%;
+    height: calc(177vh);
+  }
+
+  .button{
+    margin-left: 40%;
+  }
+}

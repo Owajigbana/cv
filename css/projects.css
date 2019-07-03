@@ -1,0 +1,249 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+/* the portfolio tiltle */
+.header {
+  position: relative;
+  top: 40px;
+  left: 100px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #a64942;
+  opacity: 0.7;
+}
+
+.header:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* the nav bar */
+.nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+}
+
+.nav ul li a:hover{
+  opacity: 0.6;
+  border-bottom: 3px solid #a64942;
+  transition: 0.1s;
+}
+
+.nav ul li {
+  list-style: none;
+  float: left;
+  margin-left: 30px;
+  font-weight: 400;
+}
+
+.nav ul {
+  margin-left: 850px;
+}
+
+.far{
+  color:#a64942;
+  position: fixed;
+  right:5%;
+  bottom:5%;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.active{
+  opacity: 0.6;
+  border-bottom: 3px solid #a64942;
+}
+
+.mobile{
+  display: none;
+}
+/* the project section design */
+#projects{
+  margin-top: 8%;
+  width: calc(100vw);
+  height: calc(110vh);
+  position: relative;
+}
+
+#projecthead, #contacthead{
+  font-weight: 900;
+  font-size:5rem;
+  letter-spacing:5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.projecttext{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  position: absolute;
+  left:7%;
+}
+
+.pad{
+  height: 350px;
+  margin: 30px 20px;
+}
+
+.row h3{
+  cursor: pointer;
+}
+
+/* the contact section design */
+#contact{
+  background-image: url(../images/bulb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh);
+}
+
+.button{
+  text-transform: uppercase;
+  margin-left: 46%;
+  margin-top: 4%;
+  background-color: #a64942;
+  width: 120px;
+  padding:10px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+#contact a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.button:hover {
+  background-color:#fff ;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#contact a:hover{
+  color:#a64942;
+  transition: 0.5s;
+}
+
+.footer{
+  margin-top: 5%;
+}
+
+@media (max-width: 1024px) {
+  ul{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+    position: absolute;
+    top: 6%;
+    left:85%;
+    transition: 2s;
+  }
+
+  .show{
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    right: -13%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: calc(30vh);
+    width: calc(113vw);
+    padding:0 20%;
+    transition: 2s;
+  }
+
+  .show li{
+    text-align: left;
+    padding:10% 2%;
+    font-size: 5rem;
+    font-weight: 900;
+    transition: 2s;
+  }
+
+  #projects{
+    margin-top: 13%;
+    height:calc(147vh)
+  }
+
+  #contact{
+    width: calc(113vw);
+    height:calc(80vh);
+  }
+
+  .button{
+    margin-left: 44%;
+  }
+}
+
+@media (max-width: 568px) {
+  .header {
+    left:30px;
+  }
+
+  .mobile{
+    display: block;
+    position: absolute;
+    top: 11.5%;
+    left:127%;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .show{
+    display:block;
+    position: relative;
+    top: 30px;
+    left: -850px;
+    background-color: rgba(225, 0, 0, 0.2);
+    height: calc(185vh);
+    padding:0% 80%;
+  }
+
+  .nav .show li a{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  #projects{
+    margin-top: 29%;
+    width: calc(100vw);
+    height: calc(340vh);
+    left:11%;
+  }
+
+  .pad{
+    height: 300px;
+    margin: 40px 10px;
+  }
+
+  #contact{
+    width: 164%;
+    height: calc(155vh);
+  }
+
+  .button{
+    margin-left: 42%;
+  }
+}
