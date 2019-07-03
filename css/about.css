@@ -1,0 +1,206 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+/* the portfolio tiltle */
+.header {
+  position: relative;
+  top: 40px;
+  left: 100px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #a64942;
+  opacity: 0.7;
+}
+
+.header:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* the nav bar */
+.nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+}
+
+.nav ul li a:hover{
+  opacity: 0.6;
+  border-bottom: 3px solid #a64942;
+  transition: 0.1s;
+}
+
+.nav ul li {
+  list-style: none;
+  float: left;
+  margin-left: 30px;
+  font-weight: 400;
+}
+
+.nav ul {
+  margin-left: 850px;
+}
+
+.active{
+  opacity: 0.6;
+  border-bottom: 3px solid #a64942;
+}
+
+.far{
+  color:#a64942;
+  position: fixed;
+  right:5%;
+  bottom:5%;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.mobile{
+  display: none;
+}
+
+/* the about section */
+
+#about{
+  height: calc(250vh);
+  margin-top: 8%;
+  padding: 0 25%;
+}
+
+.line{
+  border-left: 3px solid #a64942;
+  padding: 9%;
+  position: relative;
+  left: 50%;
+}
+
+.line::after{
+  content: '';
+  position: absolute;
+  left: -3.3%;
+  top: 0.2%;
+  padding: 3%;
+  border-radius: 100%;
+  background-color: #a64942;
+}
+
+.context{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.context:hover{
+  color: #a64942;
+  transition: 0.8s;
+}
+
+/* the contact section design */
+#contact{
+  background-image: url(../images/bulb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh);
+}
+
+#contacthead, .content{
+  font-weight: 900;
+  font-size:5rem;
+  letter-spacing:5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.button{
+  text-transform: uppercase;
+  margin-left: 46%;
+  margin-top: 4%;
+  background-color: #a64942;
+  width: 120px;
+  padding:10px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+#contact a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.button:hover {
+  background-color:#fff ;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#contact a:hover{
+  color:#a64942;
+  transition: 0.5s;
+}
+
+.footer{
+  margin-top: 5%;
+}
+
+@media (max-width: 1024px) {
+  ul{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+    position: absolute;
+    top: 6%;
+    left:85%;
+  }
+
+  #contact{
+    width: calc(113vw);
+    height:calc(80vh);
+  }
+
+  .button{
+    margin-left: 44%;
+  }
+}
+
+@media (max-width: 568px) {
+  .header {
+    left:30px;
+  }
+
+  .mobile{
+    display: block;
+    position: absolute;
+    top: 11%;
+    left:125%;
+  }
+
+  #about{
+    height: calc(550vh);
+    margin-top: 25%;
+    padding: 0 2%;
+  }
+
+  #contact{
+    width: 147%;
+    height: calc(153vh);
+  }
+
+  .button{
+    margin-left: 40%;
+  }
+}
